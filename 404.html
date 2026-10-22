@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>draftpool</title>
+<meta name="robots" content="noindex">
+<script>
+  // draftpool.github.io/GUIDE/ -> draftpool.github.io/draftpool/GUIDE/; a
+  // missing page under /draftpool/ is answered by the docs site's own 404,
+  // so this never sees one and cannot loop
+  var p = location.pathname;
+  if (p.indexOf("/draftpool/") !== 0) location.replace("/draftpool" + p + location.search + location.hash);
+</script>
+</head>
+<body>
+<p>Not found. The draftpool documentation is at <a href="/draftpool/">draftpool.github.io/draftpool</a>.</p>
+</body>
+</html>
